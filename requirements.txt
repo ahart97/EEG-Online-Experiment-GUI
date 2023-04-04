@@ -122,14 +122,11 @@ psychtoolbox==3.0.17.8
 ptyprocess==0.6.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
--e git+https://github.com/WILLSNIU186/EEG-Online-Experiment-GUI.git@c600c031a1912c1357143b40f07b22d3324555aa#egg=pycnbi&subdirectory=lib\neurodecode-master
 pycparser==2.20
 pygame==2.0.1
 pyglet==1.4.11
 Pygments==2.7.4
 PyHamcrest==2.0.2
-pyinstaller==4.0
-pyinstaller-hooks-contrib==2020.9
 pylsl==1.13.1
 pyo==1.0.4
 PyOpenGL==3.1.5

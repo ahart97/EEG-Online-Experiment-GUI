@@ -1038,6 +1038,13 @@ class Ui_MainWindow(object):
         self.statusBar.setObjectName("statusBar")
         MainWindow.setStatusBar(self.statusBar)
 
+
+        #-----------------------------------------------------Mine--------------------------------------------------
+        self.tab_EPW = QtWidgets.QWidget()
+        self.tab_EPW.setObjectName("tab_Wheelchair")
+        self.tabWidget.addTab(self.tab_EPW, "Wheelchair")
+
+
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(1)
         self.tabWidget_protocol.setCurrentIndex(1)
@@ -1149,6 +1156,7 @@ class Ui_MainWindow(object):
         self.lineEdit_InputSSVEPBreakPeriod.setText(_translate("MainWindow", "7"))
         self.lineEdit_InputSSVEPBreakPeriod.setPlaceholderText(_translate("MainWindow", "e.g. 7"))
         self.tabWidget_protocol.setTabText(self.tabWidget_protocol.indexOf(self.tab_SSVEP), _translate("MainWindow", "SSVEP"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_experimental_protocol), _translate("MainWindow", "Experimental Protocol"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_experimental_protocol), _translate("MainWindow", "Experimental Protocol"))
         self.groupBox_scale_namager.setTitle(_translate("MainWindow", "Scale Manager"))
         self.label_downsample_ratio.setText(_translate("MainWindow", "Downsample ratio "))
@@ -1380,8 +1388,10 @@ class Ui_MainWindow(object):
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_mrcp_online_testing), _translate("MainWindow", "MRCP"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_4), _translate("MainWindow", "Tab 2"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Online testing"))
+
+
+
 from pyqtgraph import PlotWidget
-import images_rc
 
 
 if __name__ == "__main__":

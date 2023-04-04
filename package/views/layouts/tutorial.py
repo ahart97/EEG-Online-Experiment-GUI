@@ -1192,7 +1192,6 @@ class Ui_MainWindow(object):
         self.tabWidget_EXG.setTabText(self.tabWidget_EXG.indexOf(self.tab_EMG), _translate("MainWindow", "EMG"))
         self.tabWidget_EXG.setTabText(self.tabWidget_EXG.indexOf(self.tab_ECG), _translate("MainWindow", "ECG"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_experiment_type), _translate("MainWindow", "Online Experiment"))
-import images_rc
 
 
 if __name__ == "__main__":
